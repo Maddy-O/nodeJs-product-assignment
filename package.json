@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-product-assignment",
+  "version": "1.0.0",
+  "description": "Its a node.js assignment for performing CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maddy-O/nodeJs-product-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maddy-O/nodeJs-product-assignment/issues"
+  },
+  "homepage": "https://github.com/Maddy-O/nodeJs-product-assignment#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4",
+    "uuid": "^8.3.2"
+  }
+}
