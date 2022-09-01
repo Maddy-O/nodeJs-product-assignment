@@ -3,18 +3,20 @@ const PORT = 5500;
 const connect = require("./configs/db");
 
 const productController = require("./controllers/products.controller");
+const reviewController = require("./controllers/review.controller");
 
 const app = express();
 
 app.use(express.json());
 
 app.use("/product", productController);
+app.use("/review", reviewController);
 
-app.listen("1234", async function () {
+app.listen(PORT, async function () {
   try {
     await connect();
-    console.log("Listening PORT 1234");
   } catch (e) {
     console.log(e.message);
   }
+  console.log(`Listening on port: ${PORT}`);
 });

@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require("uuid");
 
 const reviewSchema = new mongoose.Schema(
   {
-    userId: { type: Number, require: true, unique: true },
+    userId: { type: String, ref: "product", require: true },
     description: { type: String, require: true },
     _id: {
       type: String,
